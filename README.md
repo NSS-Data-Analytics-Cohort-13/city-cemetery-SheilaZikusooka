@@ -27,7 +27,8 @@ b. Drill down into any months that stand out to investigate. What do you find?
 5. Next look at how age at the time of death has changed over time. Add a column to the original dataset to classify each row to one of the following categories (0-18, 19-25, 26-40, 41-64, and 65+). Do this by creating a lookup table with VLOOKUP. Be sure to think about a strategy to deal with missing values. Also, create a "Year Group" dividing the records up based on burial year using a table and a VLOOKUP. Use the following groups: Before 1880, 1880-1900, 1901-1920, After 1920. Use a grouped bar chart to show how the proportion of burials per age group has changed over time. How would you describe the trends in terms of proportion of burials per age group over time?
 
 6. Create a new column titled Last Name. Extract the last name from the Name column by subsetting to all characters to the left of the comma (see the DataCamp exercise titled "String Information - LEN, SEARCH" from the Data Analysis with Spreadsheets if you need help with this). This will result in many errors for rows missing commas.   
-    a.  Drill down to those rows without a comma - what do you notice?  
+    a.  Drill down to those rows without a comma - what do you notice? 
+They are unknown, but we can assume that the infants would take the last name of the parents. 
     b.  What are the most common last names of people buried in this cemetery?  
     c.  There was a particularly famous person buried in this cemetery. Can you find that person?
 
@@ -36,3 +37,21 @@ b. Drill down into any months that stand out to investigate. What do you find?
     b.  Find the Mean() age for those classified as "Child" and then again for those classified as "Adult".  
     c.  Create a burial_date column using the DATE() function to combine the burial year, month, and day. What do you notice when you apply this function to your data?   
     d.  Find the last infant to be buried in 1864. Do this by first finding the maximum date that an infant was buried using the MAXIFS function. Then use FILTER to find the infants that were buried on that date. You'll need to apply multiple conditions in your filter. This can be accomplished by multiplying the desired conditions. See https://www.spreadsheetclass.com/excel-filter-function/ for more information about applying complex conditions inside the filter function.
+
+
+Solo Presentation:
+
+Burials and Seasonal Beliefs 
+
+1.) Count the burials by months. *This has been done* (Count_of_Burial_Month)
+
+2.) Seasons Grouped
+	a. Columns with seasons. Group by season: Winter (December-February) 30F-50F, Spring (March-May) 50F-70F, Summer (June-August) 70F-90F, Fall (September-November) 70F-50F
+
+*Use to show which season has more burials*
+
+3.) What season had the most burials?
+	a. Look at the beliefs 
+
+4.) Show 
+   
